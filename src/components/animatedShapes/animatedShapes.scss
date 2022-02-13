@@ -1,0 +1,75 @@
+@import "../../global.scss";
+
+.animatedShapes {
+    display: flex;
+
+    .square {
+        width: 60px;
+        height: 60px;
+        background-color: #59b256;//#4e6bff;
+        opacity: 0.2;
+        position: absolute;
+        top: -60px;
+        left: -60px;
+        z-index: -1;
+        animation: square 25s linear alternate infinite;
+
+        @include mobile {
+            width: 40px;
+            height: 40px;
+        }
+    
+        @keyframes square {
+            to {
+                transform: translate(100vw, 90vh);
+            }
+        }    
+    }
+    
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: crimson; //#ff97af;
+        opacity: 0.4;
+        position: absolute;
+        top: 200px;
+        left: -100px;
+        z-index: -1;
+        animation: circle 25s linear alternate infinite;
+
+        @include mobile {
+            width: 60px;
+            height: 60px;
+        }
+    
+        @keyframes circle {
+            to {
+                transform: translate(100vw, -90vh);
+            }
+        }
+    }
+        
+    .rectangle {
+        width: 50px;
+        height: 100px;
+        background-color: $mainColor; //#669966;
+        opacity: 0.3;
+        position: absolute;
+        top: 400px;
+        left: -50px;
+        z-index: -1;
+        animation: rectangle 25s linear alternate infinite;
+
+        @include mobile {
+            width: 30px;
+            height: 60px;
+        }
+    
+        @keyframes rectangle {
+            to {
+                transform: translate(100vw, -50vh);
+            }
+        }
+    }
+}

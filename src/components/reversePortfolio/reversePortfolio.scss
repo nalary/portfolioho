@@ -1,0 +1,101 @@
+@import "../../global.scss";
+
+.reversePortfolio {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile {
+        width: 90%;
+    }
+    
+    .container {
+        width: 90%;
+        height: 38vh;
+        margin: 20px 10px;
+        margin-top: 80px;
+        border: 2px solid rgb(243, 242, 242);
+        border-radius: 10px 10px 0 0;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.5s ease;   
+        cursor: pointer; 
+
+        @include mobile {
+            height: 27vh;
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+    
+        .browser {
+            width: 100%;
+            height: 20px;
+            background-color: rgb(243, 242, 242);
+            display: flex;
+            align-items: center;
+            position: sticky;
+            z-index: 2;
+    
+            .sunset {
+                width: 6px;
+                height: 6px;
+                margin: 3px;
+                margin-left: 5px;
+                background-color: #FF605C;
+                border-radius: 50%;
+            }
+    
+            .pastel {
+                width: 6px;
+                height: 6px;
+                margin: 3px;
+                background-color: #FFBD44;
+                border-radius: 50%;
+            }
+    
+            .malachite {
+                width: 6px;
+                height: 6px;
+                margin: 3px;
+                background-color: #00CA4E;
+                border-radius: 50%;
+            }
+        }
+            
+        img {
+            width: 100%;
+            object-fit: cover;
+            z-index: 1;
+
+            @include mobile {
+                height: 100%;
+            }
+        }           
+        
+        h3 {
+            position: absolute;
+            font-size: 20px;
+            color: white;
+            z-index: -1;
+
+            @include mobile {
+                font-size: 14px;
+            }
+        }
+
+        &:hover {
+            background-color: $mainColor;
+
+            img {
+                opacity: 0.2;
+                z-index: 0;
+            }
+
+            h3 {
+                z-index: 1;
+            }
+        }
+        
+    }   
+}

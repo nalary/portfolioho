@@ -15,39 +15,39 @@ const Contact = () => {
         if (!formRef.current.user_name.value) {
             setMessage("Please fill out Name field.");
             setDone("failure");
-        }
-
-        if (!formRef.current.user_email.value) {
+        } else if (!formRef.current.user_email.value) {
             setMessage("Please fill out Email field.");
             setDone("failure");
-        }
-
-        if (!formRef.current.user_subject.value) {
+        } else if (!formRef.current.user_subject.value) {
             setMessage("Please fill out Subject field.");
             setDone("failure");
-        }
-
-        if (!formRef.current.message.value) {
+        } else if (!formRef.current.message.value) {
             setMessage("Please fill out Message field.");
             setDone("failure");
+        } else {
+            emailjs
+                .sendForm(
+                    'service_iudcgb6', 
+                    'template_f0ez1jh', 
+                    formRef.current, 
+                    'user_DTYCuu7ECAydbIaYu8wcB'
+                )
+                .then((result) => {
+                    console.log(result.text);
+                    setMessage("Thanks, I'll reply ASAP :)");
+                    setDone("success");
+                    
+                    // clear all inputs
+                    formRef.current.user_name.value = "";
+                    formRef.current.user_email.value = "";
+                    formRef.current.user_subject.value = "";
+                    formRef.current.message.value = "";
+                }, 
+                (error) => {
+                    console.log(error.text);
+                }
+            );
         }
-
-        emailjs
-            .sendForm(
-                'service_iudcgb6', 
-                'template_f0ez1jh', 
-                formRef.current, 
-                'user_DTYCuu7ECAydbIaYu8wcB'
-            )
-            .then((result) => {
-                console.log(result.text);
-                setMessage("Thanks, I'll reply ASAP :)");
-        setDone("success");
-            }, 
-            (error) => {
-                console.log(error.text);
-            }
-        );
     };
 
     return (

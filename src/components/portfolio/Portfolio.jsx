@@ -43,6 +43,7 @@ const Portfolio = () => {
                         <MovePortfolio 
                             key={portfolio.id}
                             title={portfolio.title}
+                            desc={portfolio.desc}
                             img={portfolio.img}
                             link={portfolio.link}
                         />
@@ -54,6 +55,7 @@ const Portfolio = () => {
                         <ReversePortfolio 
                             key={portfolio.id}
                             title={portfolio.title}
+                            desc={portfolio.desc}
                             img={portfolio.img}
                             link={portfolio.link}
                         />
@@ -65,6 +67,7 @@ const Portfolio = () => {
                         <MovePortfolio 
                             key={portfolio.id}
                             title={portfolio.title}
+                            desc={portfolio.desc}
                             img={portfolio.img}
                             link={portfolio.link}
                         />

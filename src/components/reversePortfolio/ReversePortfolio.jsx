@@ -1,6 +1,6 @@
 import "./reversePortfolio.scss";
 
-const ReversePortfolio = ({title, img, link}) => {
+const ReversePortfolio = ({title, desc, img, link}) => {
     return (
         <div className="reversePortfolio">
             <div className="container">
@@ -14,6 +14,7 @@ const ReversePortfolio = ({title, img, link}) => {
                 </a>
                 <h3>{title}</h3>               
             </div>
+            <p>{desc}</p>
         </div>
     );
 };

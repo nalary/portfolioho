@@ -24,7 +24,7 @@ const About = () => {
                         Research Engineer, SMT Development Group, R&D Team
                     </p>
                     <p className="desc">
-                        Operating System/GUI Developer in C++
+                        Operating System/GUI Software Developer using C++
                     </p>
                     {/* <p className="desc">
                         Maintenance Project: SMT Chip Mounter CP60/SM310 Series
@@ -33,7 +33,7 @@ const About = () => {
                         Development Project: SMT Shield Can Mounter and Chip Mounter Q/V Series
                     </p> */}
                     
-                    <h3 className="title">FUNFUN THAI MAGAZINE</h3>
+                    <h3 className="title">FUNFUN THAI MAGAZINE / SB HOUSE</h3>
                     <p className="sub">
                         Bangkok, Thailand (February 2012 – October 2016)
                     </p>
@@ -41,13 +41,13 @@ const About = () => {
                         President, Writer & Editor
                     </p>
                     <p className="desc">
-                        Ran Travel Web Magazine
+                        Ran Travel Web Magazine & Hostel & Travel Agency
                     </p>
                     {/* <p className="desc">
                         Found contents and Wrote articles
                     </p> */}
 
-                    <h3 className="title">SB HOUSE</h3>
+                    {/* <h3 className="title">SB HOUSE</h3>
                     <p className="sub">
                         Bangkok, Thailand (August 2015 – September 2016)
                     </p>
@@ -56,7 +56,7 @@ const About = () => {
                     </p>
                     <p className="desc">
                         Ran Hostel & Travel Agency
-                    </p>
+                    </p> */}
 
                     <h3 className="title">INNOMETRY CO., LTD.</h3>
                     <p className="sub">
@@ -66,7 +66,7 @@ const About = () => {
                         Deputy General Manager, New Business Department
                     </p>
                     <p className="desc">
-                        Operating System/GUI Developer in C++, Team Leader
+                        Operating System/GUI Software Developer using C++, Team Leader
                     </p>
                     {/* <p className="desc">
                         Maintenance Project: X-ray Battery Inspector
@@ -88,6 +88,17 @@ const About = () => {
                     {/* <p className="desc">
                         Learned Java, JSP, Oracle, MySQL, JavaScript, jQuery, Ajax, CSS, HTML
                     </p> */}
+
+                    <h3 className="title">Full Stack Web Developer</h3>
+                    <p className="sub">
+                        Busan, Korea (February 2021 – Present)
+                    </p>
+                    <p className="sub">
+                        Freelance
+                    </p>
+                    <div className="desc">
+                        Built own projects with MERN Stack (MongoDB, Express, React, Node)
+                    </div>
                 </div>                
                 {/* <div className="award">
                     <div className="texts">

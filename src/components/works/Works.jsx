@@ -57,7 +57,7 @@ const Works = () => {
                                     <h4>{item.sub}</h4>
                                     <p>{item.desc}</p>
                                     <a href={item.link} target="_blank" rel="noreferrer">
-                                        <span>Move Now</span>
+                                        <span>View Project</span>
                                     </a>
                                 </div>
                             </div>

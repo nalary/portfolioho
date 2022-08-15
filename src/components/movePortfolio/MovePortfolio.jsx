@@ -1,6 +1,6 @@
 import "./movePortfolio.scss";
 
-const MovePortfolio = ({title, img, link}) => {
+const MovePortfolio = ({title, desc, img, link}) => {
     return (
         <div className="movePortfolio">
             <div className="container">
@@ -12,8 +12,11 @@ const MovePortfolio = ({title, img, link}) => {
                 <a href={link} target="_blank" rel="noreferrer">
                     <img src={img} alt="" />                            
                 </a>
-            </div>            
-            <h3>{title}</h3>
+            </div>   
+            <a href={link} target="_blank" rel="noreferrer" className="link">
+                <h3>{title}</h3>                      
+            </a>
+            <p>{desc}</p>
         </div> 
     );
 };

@@ -76,12 +76,22 @@
     } 
 
     h3 {
-        // margin-top: 20px;
-        font-size: 24px;
+        margin-top: 20px;
+        font-size: 26px;
 
         @include mobile {
-            // margin-top: 5px;
+            margin-top: 10px;
             font-size: 14px;
         }
     }    
+
+    p {
+        padding: 30px;
+        font-size: 16px;
+        text-align: center;
+
+        @include mobile {
+            display: none;
+        }
+    }
 }

@@ -41,7 +41,7 @@ const About = () => {
                         President, Writer & Editor
                     </p>
                     <p className="desc">
-                        Ran Travel Web Magazine & Hostel & Travel Agency
+                        Ran Travel Web Magazine / Hostel & Travel Agency
                     </p>
                     {/* <p className="desc">
                         Found contents and Wrote articles

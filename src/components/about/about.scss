@@ -94,7 +94,8 @@
                 font-weight: 300;
 
                 @include mobile {
-                    display: none;
+                    // display: none;
+                    font-size: 10px;
                 }
             }
         }

@@ -13,8 +13,8 @@ const ReversePortfolio = ({title, desc, img, link}) => {
                     <img src={img} alt="" />
                 </a>
                 <h3>{title}</h3>               
+                <p>{desc}</p>
             </div>
-            <p>{desc}</p>
         </div>
     );
 };

@@ -14,7 +14,10 @@ const ReversePortfolio = ({title, desc, img, link}) => {
                 </a>
                 <h3>{title}</h3>               
             </div>
-                <p>{desc}</p>
+            <a href={link} target="_blank" rel="noreferrer" className="link">
+                <h3>{title}</h3>                      
+            </a>
+            <p>{desc}</p>
         </div>
     );
 };

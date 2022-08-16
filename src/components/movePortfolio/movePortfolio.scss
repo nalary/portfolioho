@@ -75,15 +75,17 @@
         }
     } 
 
-    h3 {
-        margin-top: 20px;
-        font-size: 26px;
+    a {
+        h3 {
+            margin-top: 20px;
+            font-size: 26px;
 
-        @include mobile {
-            margin-top: 10px;
-            font-size: 14px;
-        }
-    }    
+            @include mobile {
+                margin-top: 10px;
+                font-size: 14px;
+            }
+        } 
+    }   
 
     p {
         padding: 30px;

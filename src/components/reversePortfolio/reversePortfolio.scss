@@ -82,17 +82,7 @@
             @include mobile {
                 font-size: 14px;
             }
-        }
-
-        p {
-            padding: 30px;
-            font-size: 16px;
-            text-align: center;
-    
-            @include mobile {
-                display: none;
-            }
-        }
+        }        
 
         &:hover {
             background-color: $mainColor;
@@ -106,6 +96,15 @@
                 z-index: 1;
             }
         }
+    }
         
-    }   
+    p {
+        padding: 30px;
+        font-size: 16px;
+        text-align: center;
+
+        @include mobile {
+            display: none;
+        }
+    }
 }
